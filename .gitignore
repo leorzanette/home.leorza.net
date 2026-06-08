@@ -1,0 +1,57 @@
+﻿# ---- Secrets / env ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.next/
+out/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# ---- Databases ----
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ---- IDE / Editor ----
+.idea/
+.vscode/
+*.iml
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs / backups / uploads ----
+*.log
+*.bak
+*.bak.*
+*.backup-*
+uploads/
+recordings/
+
+# ---- Android ----
+.gradle/
+local.properties
+*.apk
+*.aab
+captures/
