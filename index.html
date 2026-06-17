@@ -424,20 +424,6 @@
             background: linear-gradient(90deg, rgba(255,255,255,0.18), transparent);
         }
 
-        .service-card.private {
-            border-color: rgba(251, 191, 36, 0.18);
-        }
-
-        .service-card.private:hover {
-            border-color: rgba(251, 191, 36, 0.58);
-            background: rgba(251, 191, 36, 0.09);
-            box-shadow: 0 22px 54px rgba(0, 0, 0, 0.34), 0 0 38px rgba(251, 191, 36, 0.10);
-        }
-
-        .service-status.private {
-            color: rgba(251, 191, 36, 0.92);
-        }
-
         .service-card {
             min-height: 126px;
             display: flex;
@@ -485,6 +471,10 @@
             letter-spacing: 0.16em;
             text-transform: uppercase;
             color: rgba(134, 239, 172, 0.86);
+        }
+
+        .service-status.private {
+            color: rgba(251, 191, 36, 0.92);
         }
 
         .service-name {
@@ -560,16 +550,6 @@
             object-fit: contain;
             border-radius: 14px;
             background: rgba(0, 0, 0, 0.32);
-        }
-
-        .service-preview.financebot-preview {
-            display: grid;
-            gap: 10px;
-            width: min(1120px, 94vw);
-        }
-
-        .service-preview.financebot-preview img {
-            max-height: min(40vh, 520px);
         }
 
         .service-preview-label {
@@ -1352,7 +1332,7 @@
         <a class="scroll-cue" id="scrollCue" href="#servicesTitle" aria-label="Ver atalhos dos serviços">↓</a>
 
         <section class="services-section" aria-labelledby="servicesTitle">
-            <div class="services-kicker">serviços do leoserver</div>
+            <div class="services-kicker">serviços leorza.net</div>
             <div class="services-header">
                 <h2 class="services-title" id="servicesTitle">Tudo em um lugar</h2>
             </div>
@@ -1360,11 +1340,11 @@
             <div class="service-group">
                 <h3 class="service-group-title">Públicos</h3>
                 <div class="services-grid">
-                    <a class="service-card" href="https://home.leorza.net" target="_blank" rel="noopener noreferrer">
+                    <a class="service-card" href="https://leorza.net" target="_blank" rel="noopener noreferrer">
                         <div class="service-topline"><span class="service-icon">🏠</span><span class="service-status">público</span></div>
                         <div class="service-name">Home</div>
                         <p class="service-description">Página inicial com apresentação do branding e dos serviços do domínio.</p>
-                        <div class="service-url">home.leorza.net</div>
+                        <div class="service-url">leorza.net</div>
                     </a>
                     <a class="service-card" href="https://love.leorza.net" target="_blank" rel="noopener noreferrer">
                         <div class="service-topline"><span class="service-icon">❤️</span><span class="service-status">público</span></div>
@@ -1378,53 +1358,11 @@
                         <p class="service-description">App de tiragem de cartas de tarot com pagamento via pix.</p>
                         <div class="service-url">tarot.leorza.net</div>
                     </a>
-                </div>
-            </div>
-
-            <div class="service-group">
-                <h3 class="service-group-title">Privados</h3>
-                <div class="services-grid">
-                    <a class="service-card private preview-enabled" href="https://financebot.leorza.net" target="_blank" rel="noopener noreferrer">
-                        <div class="service-topline"><span class="service-icon">🤖</span><span class="service-status private">privado</span></div>
-                        <div class="service-name">FinanceBot</div>
-                        <p class="service-description">Assistente financeiro com auxilio de IA para ajudar na organização.</p>
-                        <div class="service-url">financebot.leorza.net</div>
-                        <span class="service-preview financebot-preview" aria-hidden="true"><span class="service-preview-label">preview</span><img src="/assets/service-previews/financebot-1.png" alt=""><img src="/assets/service-previews/financebot-2.png" alt=""></span>
-                    </a>
-                    <a class="service-card private preview-enabled" href="https://dashboard.leorza.net" target="_blank" rel="noopener noreferrer">
-                        <div class="service-topline"><span class="service-icon">📊</span><span class="service-status private">privado</span></div>
-                        <div class="service-name">Dashboard</div>
-                        <p class="service-description">Dashboard do Netdata do servidor acessível via internet.</p>
-                        <div class="service-url">dashboard.leorza.net</div>
-                        <span class="service-preview" aria-hidden="true"><span class="service-preview-label">preview</span><img src="/assets/service-previews/dashboard.png" alt=""></span>
-                    </a>
-                    <a class="service-card private preview-enabled" href="https://faturas.leorza.net" target="_blank" rel="noopener noreferrer">
-                        <div class="service-topline"><span class="service-icon">💳</span><span class="service-status private">login</span></div>
-                        <div class="service-name">Faturas</div>
-                        <p class="service-description">Assistente financeiro focado no NuBank para categorizar e auxiliar na organização de gastos de cartão de crédito e débito.</p>
-                        <div class="service-url">faturas.leorza.net</div>
-                        <span class="service-preview" aria-hidden="true"><span class="service-preview-label">preview</span><img src="/assets/service-previews/faturas.png" alt=""></span>
-                    </a>
-                    <a class="service-card private preview-enabled" href="https://files.leorza.net" target="_blank" rel="noopener noreferrer">
-                        <div class="service-topline"><span class="service-icon">🗂️</span><span class="service-status private">privado</span></div>
-                        <div class="service-name">Files</div>
-                        <p class="service-description">Filebrowser do servidor acessível via internet.</p>
-                        <div class="service-url">files.leorza.net</div>
-                        <span class="service-preview" aria-hidden="true"><span class="service-preview-label">preview</span><img src="/assets/service-previews/files.png" alt=""></span>
-                    </a>
-                    <a class="service-card private preview-enabled" href="https://git.leorza.net" target="_blank" rel="noopener noreferrer">
-                        <div class="service-topline"><span class="service-icon">🧬</span><span class="service-status private">login</span></div>
-                        <div class="service-name">Git</div>
-                        <p class="service-description">Forgejo mantido no servidor, para auxiliar no versionamento dos projeto localmente.</p>
-                        <div class="service-url">git.leorza.net</div>
-                        <span class="service-preview" aria-hidden="true"><span class="service-preview-label">preview</span><img src="/assets/service-previews/git.png" alt=""></span>
-                    </a>
-                    <a class="service-card private preview-enabled" href="https://ssh.leorza.net">
-                        <div class="service-topline"><span class="service-icon">🔐</span><span class="service-status private">túnel</span></div>
-                        <div class="service-name">SSH</div>
-                        <p class="service-description">Acesso remoto ao servidor via SSH pelo browser.</p>
-                        <div class="service-url">ssh.leorza.net</div>
-                        <span class="service-preview" aria-hidden="true"><span class="service-preview-label">preview</span><img src="/assets/service-previews/ssh.png" alt=""></span>
+                    <a class="service-card" href="https://jobs.leorza.net" target="_blank" rel="noopener noreferrer">
+                        <div class="service-topline"><span class="service-icon">💼</span><span class="service-status private">login</span></div>
+                        <div class="service-name">Jobs</div>
+                        <p class="service-description">Rastreador de candidaturas com Kanban, alertas e auxílio para busca de vagas.</p>
+                        <div class="service-url">jobs.leorza.net</div>
                     </a>
                 </div>
             </div>
