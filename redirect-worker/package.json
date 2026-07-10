@@ -1,0 +1,12 @@
+{
+  "name": "leorza-net-redirect",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "check": "wrangler check"
+  },
+  "devDependencies": {
+    "wrangler": "^4.24.0"
+  }
+}

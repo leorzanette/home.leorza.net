@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "leorza-net-redirect",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-10",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "leorza.net",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.leorza.net",
+      "custom_domain": true
+    }
+  ]
+}
